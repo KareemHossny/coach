@@ -1,6 +1,5 @@
 import { siteConfig } from "@/config/site";
 import { SectionHeader } from "./SectionHeader";
-import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 
 export function Transformations() {
   const { transformations, transformationsSection: s } = siteConfig;
@@ -14,14 +13,14 @@ export function Transformations() {
               key={t.name}
               className="group rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface)] overflow-hidden transition-all hover:border-primary/40"
             >
-              <BeforeAfterSlider
-                before={t.before}
-                after={t.after}
-                beforeAlt={`${t.name} before`}
-                afterAlt={`${t.name} after`}
-                beforeLabel={s.beforeLabel}
-                afterLabel={s.afterLabel}
-              />
+              <div className="relative aspect-[3/4] overflow-hidden">
+                <img
+                  src={t.image}
+                  alt={`${t.name} transformation`}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
               <div className="p-5">
                 <div className="flex items-center justify-between">
                   <h3 className="font-semibold">{t.name}</h3>

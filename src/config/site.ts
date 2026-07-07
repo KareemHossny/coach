@@ -49,28 +49,23 @@ export const siteConfig = {
       name: "Marcus T.",
       timeframe: "16 weeks",
       result: "Lost 38 lbs and built visible muscle while traveling for work.",
-      before:
-        "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80",
-      after:
-        "https://images.unsplash.com/photo-1583454152898-6f6a3afae6c6?auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://res.cloudinary.com/dwdasucfu/image/upload/v1783396079/eu6mvwX5cx-_CrNSgTNs7iXdwWbaBIxwmDiMmnv-WCnyWJ5CdnMUJfnKyaLimALQ-UGrykIZR3-Eno0zGA-hWcsnt12ugBdzfKJXilqASvFMYQg8zxI352JEnYazl89WrIH6OX0D_ZqZpf9GYUNH_A_SG5hBPVv6suYCunx3SZzX55zV1OSk447vNoP_lCUI_jxqgdc.jpg",
     },
     {
-      name: "Priya K.",
-      timeframe: "20 weeks",
-      result: "Dropped 24 lbs, doubled her strength, and finally enjoys training.",
-      before:
-        "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80",
-      after:
-        "https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=600&q=80",
+      name: "Michael",
+      timeframe: "63 years young",
+      result:
+        'At 63, Michael is proving that age doesn\u2019t limit your ability to transform your body. He says, \u201cThe program has been fantastic and I am probably in the best shape ever.\u201d',
+      image:
+        "https://res.cloudinary.com/dwdasucfu/image/upload/v1783396079/Michael-Heath-v4_fxywsu.png",
     },
     {
       name: "Jordan W.",
       timeframe: "12 weeks",
       result: "Added 14 lbs of lean mass for his first physique show.",
-      before:
-        "https://images.unsplash.com/photo-1517344884509-a0c97ec11bcc?auto=format&fit=crop&w=600&q=80",
-      after:
-        "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://res.cloudinary.com/dwdasucfu/image/upload/v1783396078/R_o3gs17.jpg",
     },
   ],
 
@@ -78,9 +73,7 @@ export const siteConfig = {
     eyebrow: "Real Results",
     title: "Transformations that\nactually last.",
     description:
-      "Drag the slider on any card to see the before and after. Every client is different. Every result is earned.",
-    beforeLabel: "BEFORE",
-    afterLabel: "AFTER",
+      "Every client is different. Every result is earned.",
   },
 
   services: [
