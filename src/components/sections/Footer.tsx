@@ -7,10 +7,7 @@ export function Footer() {
       <div className="container-page py-14 grid md:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10">
         <div>
           <div className="flex items-center gap-2.5">
-            <span className="grid place-items-center h-8 w-8 rounded-md bg-primary text-primary-foreground font-display text-base">
-              {coach.initials}
-            </span>
-            <span className="font-semibold">{coach.name}</span>
+            <img src={coach.logo} alt={coach.name} className="h-9 w-auto" />
           </div>
           <p className="mt-4 text-sm text-muted-foreground max-w-xs">{footer.blurb}</p>
           <div className="mt-5 text-xs text-muted-foreground space-y-1">
