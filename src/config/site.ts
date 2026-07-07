@@ -7,7 +7,7 @@ export const siteConfig = {
   coach: {
     name: "Alex Rivera",
     initials: "AR",
-    logo: "https://res.cloudinary.com/dwdasucfu/image/upload/v1783396825/ChatGPT_Image_Jul_7_2026_06_57_13_AM_ljkcgo.png",
+    logo: "https://res.cloudinary.com/dwdasucfu/image/upload/v1783398333/ChatGPT_Image_Jul_7_2026_07_25_13_AM_hssgjc.png",
     tagline: "Elite Performance Coach",
     email: "hello@alexrivera.coach",
     phone: "+1 (555) 010-2024",
