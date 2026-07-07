@@ -1,118 +1,92 @@
-# Coach Template
+<div align="center">
+  <img src="https://res.cloudinary.com/dwdasucfu/image/upload/v1783398333/ChatGPT_Image_Jul_7_2026_07_25_13_AM_hssgjc.png" alt="Alex Rivera" height="64" />
+  <h1 align="center">Alex Rivera</h1>
+  <p align="center">Elite Performance Coach — Los Angeles, CA</p>
+  <p align="center">
+    <a href="https://alexrivera.coach">alexrivera.coach</a>
+  </p>
+  <p align="center">
+    <img src="https://img.shields.io/badge/NASM-CPT-blue" alt="NASM CPT" />
+    <img src="https://img.shields.io/badge/Precision_Nutrition-L2-brightgreen" alt="Precision Nutrition L2" />
+    <img src="https://img.shields.io/badge/12_Years_Coaching-ff6b35" alt="12 years" />
+    <img src="https://img.shields.io/badge/500%2B_Clients-8b5cf6" alt="500+ clients" />
+    <img src="https://img.shields.io/badge/4.9%E2%98%85_Avg_Rating-gold" alt="4.9 star rating" />
+  </p>
+</div>
 
-A premium, fully responsive landing page template for personal trainers, fitness coaches, and health professionals. Built with React + Vite + TypeScript + Tailwind CSS v4 + shadcn/ui.
+---
 
-**Features**
-- Single-page marketing layout — hero, transformations, services, process, testimonials, coach bio, pricing, FAQ, lead capture form
-- Interactive before/after image comparison (currently using static transformation images)
-- Fully dark-themed design with customizable design tokens
-- Mobile-first responsive layout
-- Lead capture form with goal selection (ready to wire to your backend)
-- All content driven by a single config file — no code changes needed to rebrand
+Premium 1-on-1 fitness coaching for ambitious people who are done settling. Custom training, nutrition built around your life, and the accountability to actually follow through.
 
-## Stack
+## About
 
-| Layer | Technology |
+I've spent the last twelve years coaching people who don't have time for guesswork — executives, athletes, parents, founders. My approach is simple: build a plan around your real life, measure what matters, and adjust every week.
+
+This site is my home on the web — a place for prospective clients to learn about my coaching philosophy, see real transformations, understand my process, and apply for coaching.
+
+## What's Inside
+
+- **Hero** — brand introduction with stats (500+ clients, 4.9★ rating, 12 yrs experience, 94% goal completion)
+- **Transformations** — real client results with before/after imagery
+- **Services** — 1-on-1 coaching, custom nutrition, personalised training, weekly check-ins, accountability system, lifestyle integration
+- **Process** — four-step journey from application to results
+- **Testimonials** — client stories
+- **Coach Bio** — credentials, certifications, and background
+- **Pricing** — Starter ($249/mo), Premium ($449/mo), VIP (custom)
+- **FAQ** — answers to common questions
+- **Lead Form** — apply for coaching
+
+## Tech Stack
+
+| | |
 |---|---|
-| Framework | React 19 |
-| Build | Vite 8 |
-| Language | TypeScript |
-| Styling | Tailwind CSS v4 + shadcn/ui (Radix primitives) |
-| Routing | React Router v6 |
-| Icons | Lucide React |
-| Deployment | Vercel (static SPA) |
+| **Framework** | ![React](https://img.shields.io/badge/React-20232a?logo=react) 19 |
+| **Build** | ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite) 8 |
+| **Language** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript) |
+| **Styling** | ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss) v4 + shadcn/ui |
+| **Routing** | ![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=reactrouter) v6 |
+| **Icons** | ![Lucide](https://img.shields.io/badge/Lucide-8b5cf6) |
+| **Deployment** | ![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel) |
 
 ## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm
-
-### Install & Run
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open [http://localhost:5173](http://localhost:5173).
 
-### Build for Production
+### Build
 
 ```bash
-npm run build
-npm run preview
+npm run build     # type-check + production build
+npm run preview   # preview the production build locally
 ```
 
-The production build is output to the `dist/` directory.
+## Lead Form
 
-## Customization
+Submissions go nowhere yet — it shows a success toast. To collect leads, wire the `handleSubmit` function in `src/components/sections/LeadForm.tsx` to your email service, CRM, or database.
 
-All editable content lives in a single file:
+## Deploy
 
-**`src/config/site.ts`** — coach name, bio, services, pricing plans, testimonials, FAQ, navigation links, hero content, statistics, and the logo path.
-
-To rebrand the template for your own coaching business, edit only this file. No component code changes are needed.
-
-### Design Tokens
-
-Colors, fonts, spacing, and effects are defined as CSS custom properties in **`src/styles.css`** under the `:root` block. The theme uses OKLCH color space for consistent luminance. Key variables:
-
-- `--primary`: brand accent color (default: lime green)
-- `--background`: page background
-- `--surface`: card/section background
-- `--font-display`: heading font (default: Bebas Neue)
-- `--font-sans`: body font (default: Inter)
-
-### Images
-
-Upload your images to a hosting service (Cloudinary, Unsplash, your own CDN) and update the URLs in `src/config/site.ts`. The project currently uses placeholder images from Unsplash and Cloudinary.
-
-## Project Structure
-
-```
-src/
-├── main.tsx            # App entry point
-├── App.tsx             # Root component (routes, error boundary)
-├── styles.css          # Tailwind + design tokens
-├── config/
-│   └── site.ts         # All editable content (single source of truth)
-├── components/
-│   ├── ui/             # shadcn/ui primitives (accordion, button, form, etc.)
-│   └── sections/       # Page sections (Nav, Hero, Services, Pricing, etc.)
-├── hooks/
-│   └── use-mobile.tsx  # Mobile breakpoint detection
-└── lib/
-    └── utils.ts        # cn() utility for class merging
-```
-
-## Environment Variables
-
-No environment variables are required. The site is fully static.
-
-If you connect a backend (form submission handler, database, etc.), add your keys to `.env` at the project root and reference them via `import.meta.env.VITE_YOUR_KEY`. See `.env.example` for the format.
-
-## Deploy to Vercel
-
-1. Push this repository to GitHub (or any Git provider).
-2. Go to [vercel.com](https://vercel.com) and import the repository.
-3. Vercel auto-detects Vite — **no configuration needed**.
-4. Click **Deploy**.
-
-The SPA fallback (`vercel.json` rewrites all routes to `/index.html`) is already configured so client-side routes (like the 404 page) work on refresh.
-
-### Manual Deploy
+1. Push to GitHub.
+2. Import the repo in [Vercel](https://vercel.com).
+3. Deploy — no configuration needed.
 
 ```bash
 npm run build
 npx vercel --prod
 ```
 
-## Lead Form
+## Contact
 
-The lead capture form at the bottom of the page collects name, email, phone, goal, and a message. Currently it shows a success toast on submission. Wire it to your backend by editing the `handleSubmit` function in `src/components/sections/LeadForm.tsx`.
+- Email: [hello@alexrivera.coach](mailto:hello@alexrivera.coach)
+- Phone: +1 (555) 010-2024
+- Location: Los Angeles, CA
 
-## License
+---
 
-This template is provided for personal and commercial use. You are free to modify and use it for your own coaching business.
+<div align="center">
+  <p>Designed for results.</p>
+</div>
