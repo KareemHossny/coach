@@ -3,7 +3,7 @@
   <h1 align="center">Alex Rivera</h1>
   <p align="center">Elite Performance Coach — Los Angeles, CA</p>
   <p align="center">
-    <a href="https://alexrivera.coach">alexrivera.coach</a>
+    <a href="https://coach-alexrivera.vercel.app">alexrivera.coach</a>
   </p>
   <p align="center">
     <img src="https://img.shields.io/badge/NASM-CPT-blue" alt="NASM CPT" />
